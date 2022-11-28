@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="viewport" content="width=device-width",initial-scale="1.0">
+        
+        <title>E commerce website | About</title>
+        <link rel="stylesheet"  type="text/css" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&family=Sacramento&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+            <div class="navbar">
+                <div class="logo">
+                    <a href="home.html"><img src="images/logo1.png" width="100px"></a>
+                </div>
+                <nav>
+                    <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    
+                  
+                    </ul>
+                    
+                </nav>
+                <i class="fa fa-shopping-cart fa-2x" ></i>
+               
+                
+            </div> 
+            <div class="section">
+                <div class="container">
+                    <div class="content_section">
+                        <div class="title">
+                            <h1>About Us</h1>
+                        </div>
+                        <div class="content">
+                            <p>This is a shopping website named Bliss. It is a budding website  enlightened with creative and awe-strucking products. Kick starting with our website you explore range of products mostly we have casual and comfort wear and you can have a look with a second thought.
+                               We promise you will be flaunting out your fashion sense like a show stopper keeping along with inbuilt comfort from our clothes.We use superior quality material from our products and ou can trust us on our  services. 
+                               On this note,we also would like to tell that part of our profit will also go to some non-profit organizaton extending our bit during these crisis.</p>
+                        </div>
+
+                    </div>
+                    <div class="image_section">
+                        <img src="images/a2.gif">
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+               
+            <hr>    
+            </div>
+            <div class="feed">
+                <h2>FEEDBACK</h2>
+                <div class="feed_form">
+                    <form name="submit_googlesheet" method="post">
+                        <input type="text" name="Name" placeholder="Name"><br>
+                        <input type="email" name="Email" placeholder="Email ID"><br>
+                        <input type="contact" name="Number" placeholder="Contact Number"><br>
+                        <textarea  rows="5" cols="7" name="Review" placeholder="Write your review here"></textarea><br>
+                        <button type="submit">Submit</button>
+    
+                        
+                    </form>
+                </div>
+    
+            </div>
+            <div class="brands">
+                <div class="small_content">
+                    <div class="row">
+                        <div class="col5">
+                            <img src="images/logo-godrej.png">
+                        </div>
+                        <div class="col5">
+                            <img src="images/logo-oppo.png">
+                        </div>
+                        <div class="col5">
+                            <img src="images/logo-coca-cola.png">
+                        </div>
+                        <div class="col5">
+                            <img src="images/logo-paypal.png">
+                        </div>
+                        <div class="col5">
+                            <img src="images/logo-philips.png">
+                        </div>
+                           
+                        
+                    </div>
+                </div>
+            </div>  
+           
+        <footer>
+            <div class="footer_logo">
+                <a href="home.html"><img src="images/logo1.png" width="100px">
+    
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="home.html">Home</a>|
+                <a href="about.html">About Us</a>|
+                <a href="products.html">Products</a>|
+                <a href="login.html">Login</a>|
+                <a href="signup">Sign up</a>|
+                
+    
+    
+            </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy policy</a>|
+            <a href="">Terms of Use</a>|
+            <a href="">Refund Policy</a>|
+        </div>
+        <div class="social">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/" target="_black"><i class="fa fa-facebook" ></i></a>
+            <a href="https://www.instagram.com/" target="_black"><i class="fa fa-instagram" ></i></a>
+            <a href="https://in.linkedin.com/" target="_black"><i class="fa fa-linkedin" ></i></a>
+            <a href="https://twitter.com/?lang=en" target="_black"><i class="fa fa-twitter" ></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <a href="tel: +919876543210"><i class="fa fa-phone" ></i></a>
+            <a href="mailto: xyz@gmail.com"><i class="fa fa-envelope-o" ></i></a>
+           
+    
+        </div>
+        <hr>
+        <p>Copyright &copy;2021 bliss.All rights reserved</p>
+        </footer>      
+    
+                    
+            
+            <script type="text/javascript">
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwyABt-U3cLg3ewy2__b70VnKZ9RS25_ZpEtNtmJyhe1URImq--Tq88eHvcmvdOs8w/exec'
+                const form = document.forms['submit_googlesheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thank you for the valuable feedback.Hope you had a  happy shopping with us..."))
+                    .catch(error => console.error('Error!', error.message))
+                })
+            
+              
+            </script>
+         
+            </body>
+       
+    </html>  
